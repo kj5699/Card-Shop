@@ -1,0 +1,70 @@
+@import '../../styles/theme.scss';
+.navbar{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $background-light;
+    height: 64px;
+    max-height: 64px;
+    padding: 16px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    .logo {
+        font-size: 20px;
+        line-height: 24px;
+        color: $background-primary;
+        font-weight: 600;
+        align-content: center;
+        .logoImage{
+            min-width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            margin-bottom: -4px;
+            align-self: center;
+        }
+    }
+    .leftIcons{
+        display: flex;
+        flex-direction: row;
+        .cartIcon{
+            min-width: 20px;
+            height: 20px;
+            margin-right: 32px;
+            position: relative;
+            .cartCount{
+                position: absolute;
+                top:-6px;
+                right:0;
+                border-radius: 50%;
+                border: 0.5px dotted black;
+                min-width: 8px;
+                height: 8px;
+                font-size: 6px;
+                font-weight: 700;
+                line-height: 8px;
+            }
+        }
+        .avatar{
+            min-width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        padding: 16px 16px;
+        max-height: 64px;
+        .logo{
+            font-size: 18px;
+            line-height: 24px;
+            .logoImage{
+                min-width: 24px;
+                height: 24px;
+                margin-bottom: -4px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../styles/theme.scss';
+.cardContainer{
+    width: 30%;
+    min-width: 300px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    // margin-right:32px;
+    
+    .cardImage{
+        width:100%;
+        img{
+            width: 100%;
+        }
+    }
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 8px;
+        margin: 24px 0;
+
+        .headingRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 4px 0;
+            .name{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: $text-primary;
+            }
+            .price{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+                text-transform: capitalize;
+                color: $text-primary;
+            }
+            
+        }
+        .description{
+            width: 70%;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-transform: capitalize;
+            color: $text-secondary;
+            min-height: 48px;
+            text-align: start;
+        }
+        
+
+    }
+    
+}

@@ -1,0 +1,13 @@
+// @import '../../styles/theme.scss';
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    padding-top: 64px;
+    overflow-y: hidden;
+    @media only screen and (max-width: 767px) {
+        max-width: unset;
+        width: 100%;
+    }
+}

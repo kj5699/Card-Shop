@@ -1,0 +1,10 @@
+@import '../../styles/theme.scss';
+
+.addToCartButton{
+    width: 100%;
+    border: 1px solid $background-primary;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 12px 24px;
+    cursor: pointer;
+}
