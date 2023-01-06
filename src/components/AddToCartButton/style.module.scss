@@ -7,4 +7,55 @@
     text-align: center;
     padding: 12px 24px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color:$text-primary;
+    @media screen and (max-width:768px) {
+        padding: 10px 16px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.addToCartCounterButton{
+    width: 100%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: $background-primary ;
+    color:$text-primary;
+    
+    .operations{
+        width:30%;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px;
+        &:first-child{
+            border-radius: 0.5rem 0 0 0.5rem ;
+        }
+        &:last-child{
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+    }
+    .label{
+        width: 40%;
+        height: 100%;
+        border: 1px solid $background-primary;
+        text-align: center ;
+        background-color: #ffffff;
+        padding: 12px 0;
+    }
+    @media screen and (max-width:768px) {
+        font-size: 14px;
+        line-height: 20px;
+        .label{
+            padding: 10px 0;
+        }
+    }
+
 }

@@ -29,28 +29,29 @@
         display: flex;
         flex-direction: row;
         .cartIcon{
-            min-width: 20px;
-            height: 20px;
+            min-width: 28px;
+            height: 28px;
             margin-right: 32px;
             position: relative;
+            cursor: pointer;
             .cartCount{
                 position: absolute;
-                top:-6px;
+                top:-8px;
                 right:0;
                 border-radius: 50%;
-                border: 0.5px dotted black;
-                min-width: 8px;
-                height: 8px;
-                font-size: 6px;
+                border: 0.5px dotted $background-primary;
+                min-width: 12px;
+                height: 12px;
+                font-size: 10px;
                 font-weight: 700;
-                line-height: 8px;
+                line-height: 12px;
+                color: $background-primary;
             }
         }
         .avatar{
-            min-width: 20px;
-            height: 20px;
+            min-width: 24px;
+            height: 24px;
             border-radius: 50%;
-            border: 1px solid black;
         }
     }
     @media only screen and (max-width: 767px) {

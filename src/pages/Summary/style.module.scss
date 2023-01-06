@@ -1,0 +1,221 @@
+
+@import '../../styles/theme.scss';
+.summaryPage{
+    width: 100%;
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+    padding: 48px 24px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    .example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    }
+    .backButton{
+       width: fit-content;
+       cursor: pointer;
+       display: flex;
+       margin-bottom: 32px;
+       .label{
+            margin-left: 8px;
+            font-size: 12px;
+            line-height: 16px;
+            color:$text-secondary;
+            font-weight: 600;
+       }
+    }
+    .summaryHeading{
+        width: fit-content;
+        font-size: 24px;
+        line-height: 28px;
+        color:$text-primary;
+        font-weight: 700;
+        margin-bottom: 24px;
+
+        span{
+            font-size: 12px;
+            line-height: 18px;
+            color: $text-secondary;
+            font-weight: 600;
+        }
+    }
+    .orderSummary{
+        display: flex;
+        justify-content: space-between;
+
+        .orderItemList{
+            width: 65%;
+            min-height: 70vh;
+            border-radius: 0.5rem;
+            border:1px solid $text-secondary;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            .headingBody{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                padding-bottom: 24px;
+                .row{
+                    display: grid;
+                    grid-template-columns: minmax(10%,10%) minmax(30%, 30%) minmax(40%, 40%);
+                    align-items: center;
+                    column-gap: 36px;
+                    height: 64px;
+                    width: 100%;
+                    justify-content: center;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    div{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                .headingRow{
+                    color: $text-secondary;
+                    border-bottom: $border-dotted-medium-dark;
+                    margin-bottom: 24px;
+                    height: 48px;
+                }
+                .itemRow{
+                    color: $text-primary;
+                    
+                }
+                border-bottom: $border-dotted-medium-dark;
+            }
+            .addMoreButton{
+                display: flex;
+                margin-top: 16px;
+                cursor: pointer;
+                .label{
+                    margin-left: 4px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color:$background-primary;
+                    font-weight: 700;
+                }
+            }
+        }
+        .orderPrices{
+            width: 30%;
+            min-height: fit-content;
+            border-radius: 0.5rem;
+            border:1px solid $text-secondary;
+            padding: 24px;
+            background-color: $background-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .heading{
+                color: $text-primary;
+                border-bottom: $border-dotted-medium-dark;
+                margin-bottom: 24px;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 48px;
+                height: 48px;
+                width: 100%;
+                text-align: start;
+                color: $text-primary;
+            }
+            .priceList{
+                border-bottom: $border-dotted-medium-dark;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            .finalSection{
+                width: 100%;
+                .placeOrderButton{
+                    color: #fff;
+                    background-color: $background-primary;
+                    padding: 8px 24px;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    margin-top: 16px;
+                }
+                
+            }
+        }
+    }
+}
+.counterButtonClassName{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    background-color: $background-dark;
+    .label{
+        padding: 8px 0 !important;
+    }
+}
+.priceRow{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 100%;
+    margin-bottom: 8px;
+    color: $text-primary;
+    div{
+        text-align: start;
+    }
+    .keyName{
+        font-weight: 600;
+        color:$text-secondary;
+    }
+    .value{
+        font-weight: 700;
+        color:$text-primary;
+    }
+    .finalKey{
+        font-weight: 700;
+        color:$text-secondary; 
+        font-size: 14px;
+    }
+    .finalValue{
+        font-weight: 700;
+        color:$text-primary; 
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .summaryPage{
+        .orderSummary{
+            flex-direction: column;
+            .orderPrices{
+                width: 100%;
+                padding: 12px;
+
+            }
+            .orderItemList{
+                width: 100%;
+                margin-bottom: 32px;
+                padding: 12px;
+                min-height: fit-content;
+                .headingBody{
+                    .row ,.headingRow{
+                        column-gap: 12px;
+                        height: 48px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        grid-template-columns: minmax(20%,20%) minmax(30%, 30%) minmax(40%, 40%);
+                        margin-bottom: 8px;
+                    }
+                }
+
+            }
+        }
+    }
+    
+}

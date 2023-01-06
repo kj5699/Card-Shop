@@ -1,10 +1,11 @@
 import './App.css';
 import { BrowserRouter} from 'react-router-dom';
 import { Route, Routes} from 'react-router';
-import { useState } from 'react';
+// import { useState } from 'react';
 import ListingPage from './pages/Listing';
 import SummaryPage from './pages/Summary';
 import Layout from './components/Layout';
+
 
 function App() {
   const routes = (
@@ -14,13 +15,14 @@ function App() {
       </Routes>
   )
   return (
-    <BrowserRouter >
-    <div className="App">
-      <Layout>
-      {routes}
-      </Layout>
-    </div>
-    </BrowserRouter>
+    
+      <BrowserRouter >
+        <div className="App">
+          <Layout>
+            {routes}
+          </Layout>
+        </div>
+      </BrowserRouter>
   );
 }
 

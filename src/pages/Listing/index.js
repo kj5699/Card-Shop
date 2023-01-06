@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import styles from './style.module.scss';
 import { AiOutlineStar } from "react-icons/ai";
 import data from '../../data/data.json'
-import ExpenseCard from '../../components/Cards';
+import * as UserActions from '../../store/actions/user';
+import { connect } from 'react-redux';
+const ExpenseCardLazy = React.lazy(()=>import('../../components/Cards'));
 
-
-const ListingPage = () => {
-
+const ListingPage = (props) => {
+    console.log('CART', props.cartCount, props.cart );
   return (
     <div className={styles.listingPage}>
         <div className={styles.listingHeader}>
@@ -20,14 +21,31 @@ const ListingPage = () => {
         <div className={styles.cardsContainer}>
             {data?.length >0 && data?.map((card,index) => {
                 return (
-                    <ExpenseCard index={index} cardDetail = {card} />
+                    <Suspense>
+                        <ExpenseCardLazy key={index} 
+                        index={index} cardDetail = {card} 
+                        onAddtoCardClicked = {()=> props.onAddtoCart(card, 1)} 
+                        onReduceFromCartClicked = {()=>props.onRemoveOneFromCart(card?.id)} />
+                    </Suspense>
                 )
-            })
+                })
             }
-
         </div>
     </div>
   )
 }
+const mapStateToProps =(state) =>{
+    return{
+        cart: state.user.cart,
+        cartUpdated: state.user.cartUpdated,
+        cartCount: state.user.cartCount
+    }
+}
+const mapDispatchToProps =(dispatch) =>{
+    return{
+        onAddtoCart:(product, quantity)=> dispatch(UserActions.addToCart(product,quantity)),
+        onRemoveOneFromCart:(productId) => dispatch(UserActions.removeOneFromCart(productId))
+    }
+}
 
-export default ListingPage;
+export default connect(mapStateToProps, mapDispatchToProps)(ListingPage);
