@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Card-Shop/static/css/main.e9461912.css",
-    "main.js": "/Card-Shop/static/js/main.7e157364.js",
-    "static/css/700.dcf84ede.chunk.css": "/Card-Shop/static/css/700.dcf84ede.chunk.css",
-    "static/js/700.e5627590.chunk.js": "/Card-Shop/static/js/700.e5627590.chunk.js",
-    "static/js/787.0fbd2a4f.chunk.js": "/Card-Shop/static/js/787.0fbd2a4f.chunk.js",
-    "index.html": "/Card-Shop/index.html",
-    "main.e9461912.css.map": "/Card-Shop/static/css/main.e9461912.css.map",
-    "main.7e157364.js.map": "/Card-Shop/static/js/main.7e157364.js.map",
-    "700.dcf84ede.chunk.css.map": "/Card-Shop/static/css/700.dcf84ede.chunk.css.map",
-    "700.e5627590.chunk.js.map": "/Card-Shop/static/js/700.e5627590.chunk.js.map",
-    "787.0fbd2a4f.chunk.js.map": "/Card-Shop/static/js/787.0fbd2a4f.chunk.js.map"
+    "main.css": "/static/css/main.e9461912.css",
+    "main.js": "/static/js/main.62ffb636.js",
+    "static/css/700.dcf84ede.chunk.css": "/static/css/700.dcf84ede.chunk.css",
+    "static/js/700.e5627590.chunk.js": "/static/js/700.e5627590.chunk.js",
+    "static/js/787.0fbd2a4f.chunk.js": "/static/js/787.0fbd2a4f.chunk.js",
+    "index.html": "/index.html",
+    "main.e9461912.css.map": "/static/css/main.e9461912.css.map",
+    "main.62ffb636.js.map": "/static/js/main.62ffb636.js.map",
+    "700.dcf84ede.chunk.css.map": "/static/css/700.dcf84ede.chunk.css.map",
+    "700.e5627590.chunk.js.map": "/static/js/700.e5627590.chunk.js.map",
+    "787.0fbd2a4f.chunk.js.map": "/static/js/787.0fbd2a4f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9461912.css",
-    "static/js/main.7e157364.js"
+    "static/js/main.62ffb636.js"
   ]
 }
