@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Card-Shop/static/css/main.e9461912.css",
+    "main.css": "/Card-Shop/static/css/main.558c081f.css",
     "main.js": "/Card-Shop/static/js/main.524b56f9.js",
     "static/css/700.6dd22ef5.chunk.css": "/Card-Shop/static/css/700.6dd22ef5.chunk.css",
     "static/js/700.2e650ea9.chunk.js": "/Card-Shop/static/js/700.2e650ea9.chunk.js",
     "static/js/787.0fbd2a4f.chunk.js": "/Card-Shop/static/js/787.0fbd2a4f.chunk.js",
     "index.html": "/Card-Shop/index.html",
-    "main.e9461912.css.map": "/Card-Shop/static/css/main.e9461912.css.map",
+    "main.558c081f.css.map": "/Card-Shop/static/css/main.558c081f.css.map",
     "main.524b56f9.js.map": "/Card-Shop/static/js/main.524b56f9.js.map",
     "700.6dd22ef5.chunk.css.map": "/Card-Shop/static/css/700.6dd22ef5.chunk.css.map",
     "700.2e650ea9.chunk.js.map": "/Card-Shop/static/js/700.2e650ea9.chunk.js.map",
     "787.0fbd2a4f.chunk.js.map": "/Card-Shop/static/js/787.0fbd2a4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9461912.css",
+    "static/css/main.558c081f.css",
     "static/js/main.524b56f9.js"
   ]
 }
