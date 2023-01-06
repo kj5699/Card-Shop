@@ -72,10 +72,7 @@ const OrderPriceListComponent = ({cart, cartTotal}) =>{
         )
 };
 
-
-
 const SummaryPage = (props) => {
-  
   const navigate = useNavigate();
   const [cartTotal, isCartEmpty]  = useMemo(()=>{
       let total=0;

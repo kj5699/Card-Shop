@@ -10,7 +10,6 @@ export const addToCart=(product,quantity)=>{
     }
 }
 export const removeOneFromCart=(productId)=>{
-    console.log('Action Called')
     return {
         type:actionTypes.REMOVE_FROM_CART_SUCCESS,
         productId:productId,

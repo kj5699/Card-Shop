@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 const ExpenseCardLazy = React.lazy(()=>import('../../components/Cards'));
 
 const ListingPage = (props) => {
-    console.log('CART', props.cartCount, props.cart );
   return (
     <div className={styles.listingPage}>
         <div className={styles.listingHeader}>
