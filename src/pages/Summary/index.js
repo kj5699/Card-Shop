@@ -50,7 +50,7 @@ const OrderPriceListComponent = ({cart, cartTotal}) =>{
                 <div className={styles.priceList}>
                     <div className={styles.priceRow}>
                         <div className={styles.keyName}>Total Savings</div>
-                        <div className={styles.value}> &#x24; {parseInt('18').toFixed(2)}</div>
+                        <div className={styles.value.concat(' ').concat(styles.discount)}> &#x24; {parseInt('18').toFixed(2)}</div>
                     </div>
                     <div className={styles.priceRow}>
                         <div className={styles.keyName}>Dilevery Fee</div>
