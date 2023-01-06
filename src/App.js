@@ -16,7 +16,7 @@ function App() {
   )
   return (
     
-      <BrowserRouter >
+      <BrowserRouter basename="/Card-Shop" >
         <div className="App">
           <Layout>
             {routes}
