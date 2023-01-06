@@ -18,7 +18,7 @@ const ExpenseCard = ({cardDetail, index ,onAddtoCardClicked, cart, onReduceFromC
     <div className={styles.cardContainer}>
         <div className={styles.cardImage}>
             <img alt='' card='' src ={cardDetail?.img_url} />
-            {cardDetail?.original_price && <div className={styles.discountChip}>{(cardDetail?.original_price - cardDetail?.final_price) / cardDetail?.original_price * 100}%</div>}
+            {cardDetail?.original_price && <div className={styles.discountChip}>{(cardDetail?.original_price - cardDetail?.final_price) / cardDetail?.original_price * 100}% OFF</div>}
         </div>
         <div className={styles.cardContent} >
             <div className={styles.headingRow}>
