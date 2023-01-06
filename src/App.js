@@ -10,8 +10,8 @@ import Layout from './components/Layout';
 function App() {
   const routes = (
       <Routes>
-        <Route path="/summary" element={<SummaryPage  />} ></Route>
-        <Route path="/" element={<ListingPage />} ></Route>
+        <Route path="/Card-Shop/summary" element={<SummaryPage  />} ></Route>
+        <Route path="/Card-Shop/" element={<ListingPage />} ></Route>
       </Routes>
   )
   return (
